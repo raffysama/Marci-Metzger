@@ -63,7 +63,7 @@ body {
 .nav a {
   position: relative;
   color: rgba(255, 255, 255, 0.88);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
@@ -82,14 +82,14 @@ body {
 }
 
 .header-actions a {
-  min-height: 36px;
+  min-height: 38px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 14px;
+  padding: 0 16px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   color: #fff;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
@@ -102,12 +102,12 @@ body {
 }
 
 .theme-toggle {
-  min-height: 36px;
-  min-width: 36px;
+  min-height: 38px;
+  min-width: 38px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   background: transparent;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -317,20 +317,20 @@ body {
   padding: 14px 22px;
   background: #c8a783;
   color: #171614;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .agent-info {
-  max-width: 560px;
+  max-width: 620px;
 }
 
 .agent-eyebrow {
   margin-bottom: 18px;
   color: #c8a783;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -348,14 +348,14 @@ body {
 .agent-title {
   margin-bottom: 28px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.5px;
 }
 
 .agent-bio {
   margin-bottom: 36px;
   color: var(--body-text);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -371,19 +371,21 @@ body {
 .agent-stats strong {
   display: block;
   font-family: "Cormorant Garamond", serif;
-  font-size: 40px;
+  font-size: 52px;
   font-weight: 400;
   color: #c8a783;
 }
 
 .agent-stats span {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--muted);
 }
 
 .agent .cta {
   background: var(--text);
   color: var(--bg);
+  min-height: 50px;
+  font-size: 13px;
 }
 
 .agent .cta:hover {
@@ -470,14 +472,15 @@ body {
   border-top: 1px solid #c8a783;
   color: var(--text);
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 500;
+  line-height: 1.15;
 }
 
 .sold-card p {
   flex: 1;
   color: var(--body-text);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.75;
 }
 
@@ -535,7 +538,7 @@ body {
 
 .find-field span {
   color: #c8a783;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -547,7 +550,7 @@ body {
   background: transparent;
   color: #fff;
   font:
-    500 17px "Inter",
+    500 19px "Inter",
     sans-serif;
   cursor: pointer;
   outline: none;
@@ -575,7 +578,7 @@ body {
   background: transparent;
   color: #fff;
   font:
-    500 17px "Inter",
+    500 19px "Inter",
     sans-serif;
   outline: none;
   -moz-appearance: textfield;
@@ -606,7 +609,7 @@ body {
   background: #c8a783;
   color: #171614;
   font:
-    600 12px "Inter",
+    600 14px "Inter",
     sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -624,7 +627,7 @@ body {
   min-height: 24px;
   margin-top: 28px;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /* AFFILIATIONS */
@@ -652,7 +655,7 @@ body {
 
 .affil-head p {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -778,14 +781,14 @@ body {
 .panel-cap small {
   color: #c8a783;
   font:
-    600 12px "Inter",
+    600 14px "Inter",
     sans-serif;
   letter-spacing: 2px;
 }
 
 .panel-cap b {
   font:
-    400 30px "Cormorant Garamond",
+    400 34px "Cormorant Garamond",
     serif;
   opacity: 0;
   transform: translateY(10px);
@@ -802,7 +805,7 @@ body {
 .gallery-hint {
   margin-top: 20px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -863,7 +866,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  padding: 20px 0 20px 24px;
+  padding: 22px 0 22px 24px;
   border: 0;
   border-top: 1px solid var(--line);
   background: none;
@@ -908,14 +911,14 @@ body {
 .svc-num {
   color: #c8a783;
   font:
-    600 12px "Inter",
+    600 14px "Inter",
     sans-serif;
   letter-spacing: 2px;
 }
 
 .svc-title {
   font:
-    400 clamp(22px, 2.2vw, 32px) "Cormorant Garamond",
+    400 clamp(28px, 2.8vw, 40px) "Cormorant Garamond",
     serif;
   line-height: 1.2;
   opacity: 0.5;
@@ -943,11 +946,11 @@ body {
 }
 
 .svc-body p {
-  max-width: 440px;
-  padding: 10px 0 0 38px;
+  max-width: 500px;
+  padding: 12px 0 0 42px;
   color: var(--body-text);
   font:
-    400 14px/1.7 "Inter",
+    400 17px/1.7 "Inter",
     sans-serif;
 }
 
@@ -982,6 +985,7 @@ body {
   opacity: 1;
   transform: scale(1);
 }
+
 /* CONTACT */
 .contact {
   padding: 90px 6%;
@@ -1019,7 +1023,7 @@ body {
 .ci-label {
   margin-bottom: 12px;
   color: #c8a783;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1029,21 +1033,21 @@ body {
   margin-bottom: 8px;
   color: var(--text);
   font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.15;
 }
 
 .ci-text {
   color: var(--body-text);
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.75;
 }
 
 .ci-phone {
   color: var(--text);
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(30px, 3vw, 40px);
+  font-size: clamp(34px, 3.4vw, 46px);
   line-height: 1.1;
   text-decoration: none;
   transition: color 0.3s;
@@ -1056,7 +1060,7 @@ body {
 .ci-note {
   margin-top: 16px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -1067,7 +1071,7 @@ body {
   gap: 14px;
   padding: 4px 0;
   color: var(--body-text);
-  font-size: 15px;
+  font-size: 17px;
   list-style: none;
   cursor: pointer;
 }
@@ -1106,8 +1110,8 @@ body {
 }
 
 .hours summary svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   margin-left: auto;
   color: #c8a783;
   transition: transform 0.4s ease;
@@ -1128,10 +1132,10 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 9px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed var(--line);
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .hours-list li:last-child {
@@ -1155,7 +1159,7 @@ body {
 .hours-list li.today span::after {
   content: " · Today";
   color: #c8a783;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1178,14 +1182,14 @@ body {
 .form-head h3 {
   color: var(--text);
   font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 500;
 }
 
 .form-head p {
   margin-top: 6px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .field {
@@ -1200,7 +1204,7 @@ body {
 
 .field span {
   color: #c8a783;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1215,7 +1219,7 @@ body {
   background: transparent;
   color: var(--text);
   font:
-    500 16px "Inter",
+    500 18px "Inter",
     sans-serif;
   outline: none;
   resize: vertical;
@@ -1236,9 +1240,11 @@ body {
 .contact-form .cta {
   grid-column: 1 / -1;
   justify-self: start;
+  min-height: 50px;
   border: 0;
   background: var(--text);
   color: var(--bg);
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -1246,6 +1252,7 @@ body {
   background: #c8a783;
   color: #fff;
 }
+
 /* MAP */
 .map {
   position: relative;
@@ -1262,7 +1269,7 @@ body {
   border: 0;
 }
 
-/* dark mode: to map */
+/* dark mode: pinadidilim ang map */
 :root[data-theme="dark"] .map iframe {
   filter: grayscale(1) invert(0.92) contrast(0.9) brightness(0.9);
 }
@@ -1273,8 +1280,8 @@ body {
   left: 6%;
   bottom: 40px;
   z-index: 2;
-  width: min(380px, 88%);
-  padding: 30px 30px 26px;
+  width: min(420px, 88%);
+  padding: 32px 32px 28px;
   border-top: 3px solid #c8a783;
   background: var(--bg);
   color: var(--text);
@@ -1285,7 +1292,7 @@ body {
 .map-eyebrow {
   margin-bottom: 10px;
   color: #c8a783;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1295,14 +1302,14 @@ body {
   margin-bottom: 10px;
   color: var(--text);
   font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.15;
 }
 
 .map-addr {
   color: var(--body-text);
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.75;
 }
 
@@ -1314,7 +1321,7 @@ body {
   padding-top: 16px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .map-hours .dot {
@@ -1331,17 +1338,17 @@ body {
 }
 
 .map-btn {
-  min-height: 42px;
+  min-height: 46px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 0 20px;
+  padding: 0 22px;
   border: 1px solid var(--line);
   background: transparent;
   color: var(--text);
   font:
-    600 11px "Inter",
+    600 13px "Inter",
     sans-serif;
   letter-spacing: 1.5px;
   text-decoration: none;
@@ -1353,8 +1360,8 @@ body {
 }
 
 .map-btn svg {
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
 }
 
 .map-btn.primary {
@@ -1369,6 +1376,7 @@ body {
   background: #c8a783;
   color: #fff;
 }
+
 /* FOOTER */
 .footer {
   position: relative;
@@ -1393,7 +1401,7 @@ body {
 .socials {
   display: flex;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
   margin-bottom: 26px;
   list-style: none;
 }
@@ -1413,8 +1421,8 @@ body {
 }
 
 .socials svg {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 
 .footer-copy {
@@ -1422,7 +1430,7 @@ body {
   display: inline-block;
   padding-bottom: 26px;
   color: rgba(255, 255, 255, 0.65);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -1438,6 +1446,7 @@ body {
   background: #fff;
   transform: translateX(-50%);
 }
+
 /* RESPONSIVE */
 @media (max-width: 1050px) {
   .header {
@@ -1449,11 +1458,11 @@ body {
   }
 
   .nav a {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .header-actions a {
-    padding: 0 10px;
+    padding: 0 12px;
   }
 
   .find-bar {
@@ -1526,12 +1535,25 @@ body {
     flex-wrap: wrap;
   }
 
+  .agent-bio,
+  .agent-title {
+    font-size: 17px;
+  }
+
   .sold {
     padding: 70px 8%;
   }
 
   .sold-head {
     margin-bottom: 44px;
+  }
+
+  .sold-card h3 {
+    font-size: 30px;
+  }
+
+  .sold-card p {
+    font-size: 16px;
   }
 
   .find {
@@ -1550,6 +1572,10 @@ body {
   .affil-head {
     margin: 0 5% 36px;
     gap: 16px;
+  }
+
+  .affil-head p {
+    font-size: 13px;
   }
 
   .marquee-track li {
@@ -1586,6 +1612,42 @@ body {
     height: 340px;
   }
 
+  /* SERVICES (mobile) */
+  .services {
+    padding: 50px 6%;
+  }
+
+  .services-head {
+    margin-bottom: 24px;
+  }
+
+  .svc-wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .svc-visual {
+    order: -1;
+    border-radius: 14px;
+  }
+
+  .svc-item {
+    padding: 18px 0 18px 18px;
+  }
+
+  .svc-top {
+    gap: 14px;
+  }
+
+  .svc-title {
+    font-size: 26px;
+  }
+
+  .svc-body p {
+    padding: 8px 0 0 0;
+    font-size: 16px;
+  }
+
   /* CONTACT (mobile) */
   .contact {
     padding: 60px 6%;
@@ -1608,6 +1670,10 @@ body {
     padding: 24px 22px;
   }
 
+  .ci-block h3 {
+    font-size: 32px;
+  }
+
   .hours summary {
     flex-wrap: wrap;
     gap: 6px 14px;
@@ -1619,8 +1685,41 @@ body {
     padding: 28px 22px;
   }
 
+  .form-head h3 {
+    font-size: 36px;
+  }
+
   .contact-form .cta {
     justify-self: stretch;
+  }
+
+  /* MAP + FOOTER (mobile) */
+  .map {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map iframe {
+    position: static;
+    height: 320px;
+  }
+
+  .map-card {
+    position: static;
+    width: 100%;
+    padding: 26px 6% 28px;
+    box-shadow: none;
+  }
+
+  .footer {
+    padding: 52px 6% 40px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 1.7;
   }
 }
 
