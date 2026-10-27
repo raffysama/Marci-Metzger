@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Moderno</title>
+
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") || "dark";
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#collections">Listings</a>
+        <a href="#gallery">Let's move</a>
+        <a href="#about">About us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact">Inquiry</a>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode">
+          ◐
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-slider">
+          <img
+            class="slide active"
+            src="img/hero.webp"
+            alt="Modern luxury interior with contemporary furniture"
+          />
+          <img
+            class="slide"
+            src="img/hero-1.avif"
+            alt="Luxury bathroom interior"
+          />
+          <img class="slide" src="img/hero-2.avif" alt="Luxury living room" />
+        </div>
+
+        <a href="#" class="logo">
+          <img src="img/logo.webp" alt="La Moderno" />
+        </a>
+
+        <button class="slider-btn prev" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button class="slider-btn next" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <div class="hero-content">
+          <p class="eyebrow">MARCI METZGER - THE RIDGE REALTY GROUP</p>
+          <h1>Pahrump Realtor.</h1>
+          <a href="#contact" class="cta">START A CONSULTATION</a>
+        </div>
+      </section>
+
+      <!-- AGENT -->
+      <section class="agent" id="about">
+        <div class="agent-photo-wrap">
+          <img
+            class="agent-photo"
+            src="img/agent.webp"
+            alt="Marci Metzger, Realtor"
+          />
+          <span class="agent-badge">28+ Years</span>
+        </div>
+
+        <div class="agent-info">
+          <p class="agent-eyebrow">Meet your realtor</p>
+          <h2 class="agent-name">Marci Metzger</h2>
+          <p class="agent-title">Realtor for nearly 3 decades</p>
+
+          <p class="agent-bio">
+            Helping families and investors find spaces that fit the way they
+            live, with honest guidance from the first viewing to the final
+            signature.
+          </p>
+
+          <div class="agent-stats">
+            <div><strong>28+</strong><span>Years of experience</span></div>
+            <div><strong>500+</strong><span>Homes sold</span></div>
+            <div><strong>100%</strong><span>Client focused</span></div>
+          </div>
+
+          <a href="tel:2069196886" class="cta">CALL 206-919-6886</a>
+        </div>
+      </section>
+
+      <!-- SOLD -->
+      <section class="sold" id="services">
+        <div class="sold-head">
+          <p class="agent-eyebrow">Why clients choose us</p>
+          <h2 class="sold-title">Get it sold</h2>
+        </div>
+
+        <div class="sold-grid">
+          <article class="sold-card">
+            <div class="sold-img">
+              <img src="img/sold-1.webp" alt="Modern kitchen interior" />
+              <span class="sold-num">01</span>
+            </div>
+            <h3>Top Residential Sales Last 5 Years</h3>
+            <p>
+              We helped nearly 90 clients in 2021, and closed 28.5 million in
+              sales! Our team works hard everyday to grow and learn, so that we
+              may continue to excel in our market. Our clients deserve our best,
+              & we want to make sure our best is better every year.
+            </p>
+          </article>
+
+          <article class="sold-card">
+            <div class="sold-img">
+              <img src="img/sold-2.webp" alt="Villa with pool" />
+              <span class="sold-num">02</span>
+            </div>
+            <h3>Don't Just List it...</h3>
+            <p>
+              Get it SOLD! We exhaust every avenue to ensure our listings are at
+              the fingertips of every possible buyer, getting you top dollar for
+              your home.
+            </p>
+          </article>
+
+          <article class="sold-card">
+            <div class="sold-img">
+              <img src="img/sold-3.webp" alt="House keys on wooden table" />
+              <span class="sold-num">03</span>
+            </div>
+            <h3>Guide to Buyers</h3>
+            <p>
+              Nobody knows the market like we do. Enjoy having a pro at your
+              service. Market analysis, upgrades lists, contractors on speed
+              dial, & more!
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FIND -->
+      <section class="find" id="collections">
+        <div class="find-inner">
+          <p class="agent-eyebrow">Find your place</p>
+          <h2 class="find-title">Find your dream home</h2>
+
+          <form class="find-bar" id="findForm">
+            <label class="find-field">
+              <span>Location</span>
+              <select name="location">
+                <option>Any city</option>
+                <option>Quezon City</option>
+                <option>Makati</option>
+                <option>Taguig</option>
+                <option>Tagaytay</option>
+              </select>
+            </label>
+
+            <label class="find-field">
+              <span>Type</span>
+              <select name="type">
+                <option>Any type</option>
+                <option>House</option>
+                <option>Condo</option>
+                <option>Villa</option>
+                <option>Lot</option>
+              </select>
+            </label>
+
+            <label class="find-field">
+              <span>Bedrooms</span>
+              <select name="beds">
+                <option>Any</option>
+                <option>2+</option>
+                <option>3+</option>
+                <option>4+</option>
+                <option>5+</option>
+              </select>
+            </label>
+
+            <div class="find-field find-price">
+              <span>Price range</span>
+              <div class="price-inputs">
+                <input
+                  type="number"
+                  name="minPrice"
+                  placeholder="Min"
+                  min="0"
+                  step="1000000"
+                />
+                <i>–</i>
+                <input
+                  type="number"
+                  name="maxPrice"
+                  placeholder="Max"
+                  min="0"
+                  step="1000000"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="find-btn" aria-label="Search listings">
+              <span>Search</span> →
+            </button>
+          </form>
+
+          <p class="find-result" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- AFFILIATIONS -->
+      <section class="affil" aria-label="Affiliations">
+        <div class="affil-head">
+          <span></span>
+          <p>Proudly affiliated with</p>
+          <span></span>
+        </div>
+
+        <div class="marquee">
+          <ul class="marquee-track">
+            <li>
+              <img src="img/affil-ridge.webp" alt="The Ridge Realty Group" />
+            </li>
+            <li>
+              <img
+                src="img/affil-equal-housing.webp"
+                alt="Equal Housing Opportunity"
+              />
+            </li>
+            <li><img src="img/affil-realtor.webp" alt="REALTOR" /></li>
+            <li>
+              <img src="img/affil-chamber.webp" alt="Chamber of Commerce" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery" id="gallery">
+        <div class="gallery-head">
+          <p class="agent-eyebrow">Our work</p>
+          <h2 class="sold-title">Photo Gallery</h2>
+        </div>
+
+        <div class="accordion">
+          <button class="panel active" data-full="img/gallery-1.webp">
+            <img
+              src="img/gallery-1.webp"
+              alt="Home exterior with mountain view"
+              loading="lazy"
+            />
+          </button>
+          <button class="panel" data-full="img/gallery-2.webp">
+            <img src="img/gallery-2.webp" alt="Living room" loading="lazy" />
+          </button>
+          <button class="panel" data-full="img/gallery-3.webp">
+            <img
+              src="img/gallery-3.webp"
+              alt="Staircase interior"
+              loading="lazy"
+            />
+          </button>
+          <button class="panel" data-full="img/gallery-4.webp">
+            <img src="img/gallery-4.webp" alt="Kitchen" loading="lazy" />
+          </button>
+          <button class="panel" data-full="img/gallery-5.webp">
+            <img
+              src="img/gallery-5.webp"
+              alt="Backyard with pool"
+              loading="lazy"
+            />
+          </button>
+          <button class="panel" data-full="img/gallery-6.webp">
+            <img src="img/gallery-6.webp" alt="Bedroom" loading="lazy" />
+          </button>
+          <button class="panel" data-full="img/gallery-7.webp">
+            <img src="img/gallery-7.webp" alt="Bathroom" loading="lazy" />
+          </button>
+        </div>
+
+        <p class="gallery-hint">Hover to explore · click to enlarge</p>
+
+        <dialog class="lightbox">
+          <button class="lb-close" aria-label="Close">×</button>
+          <img src="" alt="" />
+        </dialog>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services" id="our-services">
+        <div class="services-head">
+          <p class="agent-eyebrow">What we do</p>
+          <h2 class="sold-title">Our Services</h2>
+        </div>
+
+        <div class="svc-wrap">
+          <div class="svc-list">
+            <button class="svc-item active" data-index="0">
+              <span class="svc-top">
+                <span class="svc-num">01</span>
+                <span class="svc-title">Real Estate Done Right</span>
+              </span>
+              <span class="svc-body">
+                <div>
+                  <p>
+                    Buying, selling, or just exploring the market? We guide you
+                    through every step so you feel prepared and confident.
+                  </p>
+                </div>
+              </span>
+            </button>
+
+            <button class="svc-item" data-index="1">
+              <span class="svc-top">
+                <span class="svc-num">02</span>
+                <span class="svc-title">Commercial &amp; Residential</span>
+              </span>
+              <span class="svc-body">
+                <div>
+                  <p>
+                    From starter homes to luxury estates and commercial spaces,
+                    we help you find the right property at the right price.
+                  </p>
+                </div>
+              </span>
+            </button>
+
+            <button class="svc-item" data-index="2">
+              <span class="svc-top">
+                <span class="svc-num">03</span>
+                <span class="svc-title">Rely on Expertise</span>
+              </span>
+              <span class="svc-body">
+                <div>
+                  <p>
+                    Questions about financing or affordability? We connect you
+                    with trusted people who give clear answers, fast.
+                  </p>
+                </div>
+              </span>
+            </button>
+          </div>
+
+          <div class="svc-visual">
+            <img
+              class="active"
+              src="img/service-1.webp"
+              alt="Real estate done right"
+              loading="lazy"
+            />
+            <img
+              src="img/service-2.webp"
+              alt="Commercial and residential property"
+              loading="lazy"
+            />
+            <img
+              src="img/service-3.webp"
+              alt="Client handshake"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="contact-head">
+          <p class="agent-eyebrow">Get in touch</p>
+          <h2 class="sold-title">Call or Visit</h2>
+        </div>
+
+        <div class="contact-box">
+          <!-- INFO -->
+          <div class="contact-info">
+            <div class="ci-block">
+              <p class="ci-label">Visit us</p>
+              <h3>Marci Metzger</h3>
+              <p class="ci-text">
+                The Ridge Realty Group<br />
+                3190 HW-160, Suite F<br />
+                Pahrump, Nevada 89048, United States
+              </p>
+            </div>
+
+            <div class="ci-block">
+              <p class="ci-label">Call us</p>
+              <a href="tel:2069196886" class="ci-phone">(206) 919-6886</a>
+            </div>
+
+            <div class="ci-block">
+              <p class="ci-label">Office hours</p>
+
+              <details class="hours">
+                <summary>
+                  <span class="hours-now">Open today</span>
+                  <b>8:00 am – 7:00 pm</b>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </summary>
+
+                <ul class="hours-list">
+                  <li data-day="1"><span>Mon</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="2"><span>Tue</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="3"><span>Wed</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="4"><span>Thu</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="5"><span>Fri</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="6"><span>Sat</span><b>8:00 am – 7:00 pm</b></li>
+                  <li data-day="0"><span>Sun</span><b>8:00 am – 7:00 pm</b></li>
+                </ul>
+              </details>
+
+              <p class="ci-note">
+                Appointments outside office hours available upon request. Just
+                call!
+              </p>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <form class="contact-form" action="#" method="post">
+            <div class="form-head">
+              <h3>Send a message</h3>
+              <p>We'll get back to you as soon as we can.</p>
+            </div>
+
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span>Email *</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="you@email.com"
+                required
+              />
+            </label>
+
+            <label class="field field-full">
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="How can we help?"
+              ></textarea>
+            </label>
+
+            <button type="submit" class="cta">SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+      <!-- MAP -->
+      <section class="map" aria-label="Office location">
+        <iframe
+          title="Map to The Ridge Realty Group office"
+          src="https://www.google.com/maps?q=3190+HW-160+Suite+F,+Pahrump,+Nevada+89048&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+
+        <div class="map-card">
+          <p class="map-eyebrow">Find us here</p>
+          <h3>The Ridge Realty Group</h3>
+          <p class="map-addr">
+            3190 HW-160, Suite F<br />
+            Pahrump, Nevada 89048
+          </p>
+
+          <p class="map-hours">
+            <span class="dot"></span> Open daily · 8:00 am – 7:00 pm
+          </p>
+
+          <div class="map-actions">
+            <a
+              class="map-btn primary"
+              href="https://www.google.com/maps/dir/?api=1&destination=3190+HW-160+Suite+F,+Pahrump,+Nevada+89048"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 11 21 3l-8 18-2-7z" />
+              </svg>
+              Get directions
+            </a>
+            <a class="map-btn" href="tel:2069196886">Call</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <ul class="socials">
+        <li>
+          <a href="#" aria-label="Facebook">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="LinkedIn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer-copy">
+        Copyright © 2026 Marci Metzger - All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
