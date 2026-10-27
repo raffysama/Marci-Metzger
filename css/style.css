@@ -116,6 +116,47 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* BURGER */
+.burger {
+  display: none;
+  width: 38px;
+  height: 38px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.burger:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.burger span {
+  width: 18px;
+  height: 1.5px;
+  background: #fff;
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+/* X*/
+.header.menu-open .burger span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.header.menu-open .burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.menu-open .burger span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
 /* LOGO (inside hero) */
 .logo {
   position: absolute;
@@ -1489,8 +1530,48 @@ body {
     padding: 14px 5%;
   }
 
+  .burger {
+    display: flex;
+  }
+
+  /* nav ay nagiging dropdown sa ilalim ng header */
   .nav {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(23, 22, 20, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition:
+      max-height 0.45s ease,
+      opacity 0.3s ease,
+      visibility 0.3s;
+  }
+
+  .header.menu-open .nav {
+    max-height: 400px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav a {
+    padding: 18px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 17px;
+  }
+
+  .nav a:hover {
+    background: rgba(255, 255, 255, 0.06);
   }
 
   .logo {
@@ -1736,6 +1817,15 @@ body {
 
   .hero h1 {
     font-size: 42px;
+  }
+  .burger {
+    width: 34px;
+    height: 34px;
+  }
+
+  .theme-toggle {
+    min-width: 34px;
+    min-height: 34px;
   }
 }
 

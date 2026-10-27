@@ -164,3 +164,37 @@ svcItems.forEach((item, i) => {
     if (window.matchMedia("(hover: hover)").matches) setService(i);
   });
 });
+
+// Mobile burger menu
+{
+  const header = document.querySelector(".header");
+  const burger = document.querySelector(".burger");
+
+  const setMenu = (open) => {
+    header.classList.toggle("menu-open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  };
+
+  burger.addEventListener("click", () =>
+    setMenu(!header.classList.contains("menu-open")),
+  );
+
+  // close for link
+  document
+    .querySelectorAll(".nav a")
+    .forEach((link) => link.addEventListener("click", () => setMenu(false)));
+
+  // close for click outside the header or Esc
+  document.addEventListener("click", (e) => {
+    if (!header.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setMenu(false);
+  });
+
+  // isara kapag lumapad ulit ang screen
+  window
+    .matchMedia("(min-width: 761px)")
+    .addEventListener("change", (e) => e.matches && setMenu(false));
+}

@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav" aria-label="Main navigation">
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
         <a href="#">Home</a>
         <a href="#collections">Listings</a>
         <a href="#gallery">Let's move</a>
@@ -32,6 +32,16 @@
         <a href="#contact">Inquiry</a>
         <button class="theme-toggle" aria-label="Toggle dark/light mode">
           ◐
+        </button>
+        <button
+          class="burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </header>
