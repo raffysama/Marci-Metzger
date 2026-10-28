@@ -198,3 +198,16 @@ svcItems.forEach((item, i) => {
     .matchMedia("(min-width: 761px)")
     .addEventListener("change", (e) => e.matches && setMenu(false));
 }
+
+// BACK TO TOP
+{
+  const toTop = document.querySelector(".to-top");
+
+  const onScroll = () =>
+    toTop.classList.toggle("show", window.scrollY > window.innerHeight * 0.8);
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  toTop.addEventListener("click", () => window.scrollTo({ top: 0 }));
+}
