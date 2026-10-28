@@ -64,19 +64,17 @@ const findForm = document.querySelector("#findForm");
 
 findForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const { location, type, beds, minPrice, maxPrice } = Object.fromEntries(
-    new FormData(findForm),
-  );
+  const { location, type, beds, baths, sort, minPrice, maxPrice } =
+    Object.fromEntries(new FormData(findForm));
 
   const range =
     minPrice || maxPrice
-      ? `₱${minPrice || 0} to ₱${maxPrice || "any"}`
+      ? `$${minPrice || 0} to $${maxPrice || "any"}`
       : "any price";
 
   findForm.parentElement.querySelector(".find-result").textContent =
-    `Searching: ${type} in ${location}, ${beds} bedrooms, ${range}`;
+    `Searching: ${type} in ${location} · ${beds} beds, ${baths} baths · ${range} · sorted: ${sort}`;
 });
-
 // AFFILIATIONS MARQUEE (JS-driven, hindi apektado ng reduced-motion)
 window.addEventListener("load", () => {
   const marquee = document.querySelector(".marquee");
@@ -87,7 +85,6 @@ window.addEventListener("load", () => {
   const setWidth = mTrack.scrollWidth;
   if (!setWidth) return;
 
-  // clone hanggang sapat para walang puwang
   while (mTrack.scrollWidth < marquee.offsetWidth + setWidth) {
     originals.forEach((li) => {
       const clone = li.cloneNode(true);
@@ -193,7 +190,6 @@ svcItems.forEach((item, i) => {
     if (e.key === "Escape") setMenu(false);
   });
 
-  // isara kapag lumapad ulit ang screen
   window
     .matchMedia("(min-width: 761px)")
     .addEventListener("change", (e) => e.matches && setMenu(false));
